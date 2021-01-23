@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Adzira\\Desktop\\GitHub\\DZ3\\Task3\\Task3.csproj",
+      "projectUniqueName": "C:\\Users\\Adzira\\Desktop\\Homework-hub\\DZ3\\Task3\\Task3.csproj",
       "projectName": "Task3",
-      "projectPath": "C:\\Users\\Adzira\\Desktop\\GitHub\\DZ3\\Task3\\Task3.csproj",
+      "projectPath": "C:\\Users\\Adzira\\Desktop\\Homework-hub\\DZ3\\Task3\\Task3.csproj",
       "packagesPath": "C:\\Users\\Adzira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Adzira\\Desktop\\GitHub\\DZ3\\Task3\\obj\\",
+      "outputPath": "C:\\Users\\Adzira\\Desktop\\Homework-hub\\DZ3\\Task3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "A:\\Microsoft\\Xamarin\\NuGet\\"

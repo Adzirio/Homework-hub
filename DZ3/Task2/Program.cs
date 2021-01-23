@@ -6,6 +6,7 @@ namespace Task2
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Телефонный справочник.");
             string[,] directory = new string[5, 2];
             directory[0, 0] = "Андрей    "; directory[0, 1] = "andrey@gmail.com";
             directory[1, 0] = "Никита    "; directory[1, 1] = "nikita@mail.ru";
