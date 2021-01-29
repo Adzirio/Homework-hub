@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Task4
+namespace Mask4
 {
     class Program
     {
