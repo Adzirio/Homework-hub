@@ -8,13 +8,13 @@ namespace Mask1
     public class Test
     {
         public Random rnd = new Random();
-        public HashSet<string> hashSet = new HashSet<string>();
+        public HashSet<string> hashSet = new HashSet<string>(100);
         public string[] testArray = new string[10000];
         public void AddValue()
         {
             for (int i = 0; i < testArray.Length; i++)
             {
-                string set = (rnd.Next(0, 10001)).ToString();
+                string set = (rnd.Next(99999999, 1000000000)).ToString();
                 testArray[i] = set;
                 hashSet.Add(set);
             }
@@ -34,6 +34,7 @@ namespace Mask1
         public void TestOfHashSet()
         {
             var classTest = new Test();
+            classTest.AddValue();
             string test = classTest.testArray[7499];
             var result = classTest.hashSet.Contains(test);
             Console.WriteLine(result);
@@ -42,6 +43,7 @@ namespace Mask1
         public void TestOfArray()
         {
             var classTest = new Test();
+            classTest.AddValue();
             string test = classTest.testArray[7499];
             for (int i = 0; i < classTest.testArray.Length; i++)
             {
