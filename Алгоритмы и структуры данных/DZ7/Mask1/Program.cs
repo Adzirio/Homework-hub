@@ -7,19 +7,19 @@ namespace Mask1
     {
         static void Main(string[] args)
         {
-            int N = 5;
-            int M = 8;
-            int[,] A = new int[N, M];
+            int A = 5;
+            int B = 8;
+            int[,] Array = new int[A, B];
             int i, j;
-            for (j = 0; j < M; j++)
-                A[0, j] = 1;
-            for (i = 1; i < N; i++)
+            for (j = 0; j < B; j++)
+                Array[0, j] = 1;
+            for (i = 1; i < A; i++)
             {
-                A[i, 0] = 1;
-                for (j = 1; j < M; j++)
-                    A[i, j] = A[i, j - 1] + A[i - 1, j];
+                Array[i, 0] = 1;
+                for (j = 1; j < B; j++)
+                    Array[i, j] = Array[i, j - 1] + Array[i - 1, j];
             }
-            Console.WriteLine(A[(N - 1), (M - 1)]); //330
+            Console.WriteLine(Array[(A - 1), (B - 1)]); //330
         }
     }
 }
