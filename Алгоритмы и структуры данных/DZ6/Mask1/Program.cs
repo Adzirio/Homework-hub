@@ -155,11 +155,6 @@ namespace Mask1
             hashSet.Add(node);
             while(stack != null)
             {
-                if (stack.Count == 0)
-                {
-                    Console.WriteLine("Искомое значение не найденно.");
-                    return;
-                }
                 var check = stack.Pop();
                 Console.WriteLine(check.Name);
                 if (check.Name == name)
