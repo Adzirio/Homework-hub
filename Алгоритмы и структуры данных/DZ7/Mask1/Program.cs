@@ -20,6 +20,15 @@ namespace Mask1
                     Array[i, j] = Array[i, j - 1] + Array[i - 1, j];
             }
             Console.WriteLine(Array[(A - 1), (B - 1)]); //330
+            Console.WriteLine(Recursive(A, B));  //330
+        }
+        public static int Recursive(int A, int B)
+        {
+            if (A == 1)
+                return 1;
+            if (B == 1)
+                return 1;
+            return Recursive(A - 1, B) + Recursive(A, B - 1);
         }
     }
 }
