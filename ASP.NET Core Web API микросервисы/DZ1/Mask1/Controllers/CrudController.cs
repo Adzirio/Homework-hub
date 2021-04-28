@@ -10,7 +10,7 @@ namespace Mask1.Controllers
     [ApiController]
     public class CrudController : ControllerBase
     {
-        private readonly ValuesHolder holder;
+        private readonly ValuesHolder _holder;
         
         public CrudController(ValuesHolder holder)
         {
