@@ -76,15 +76,10 @@ namespace Mask1
         {
             var stack = new Stack<Node>();
             stack.Push(Head);
-            while (stack != null)
+            while (stack.Count != null)
             {
                 var check = stack.Pop();
                 Console.WriteLine(check.Value);
-                if (check.Value == value)
-                {
-                    Console.WriteLine("Искомое значение: " + check.Value);
-                    return;
-                }
                 if(check.Right != null)
                 {
                     stack.Push(check.Right);
