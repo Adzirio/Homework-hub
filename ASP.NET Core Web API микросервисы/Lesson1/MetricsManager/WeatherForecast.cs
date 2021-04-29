@@ -3,16 +3,16 @@ using System.Collections.Generic;
 
 namespace MetricsManager
 {
-    public class Value
-    {
-        public DateTime Date { get; set; }
-
-        public int TemperatureC { get; set; }
-
-        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-    }
     public class ValuesHolder
     {
+        public class Value
+        {
+            public DateTime Date { get; set; }
+
+            public int TemperatureC { get; set; }
+
+            public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+        }
         public List<Value> Array { get; set; }
         public void Add(string temp)
         {
