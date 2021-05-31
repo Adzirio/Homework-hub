@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Mask1.Controllers
+namespace MetricsManager.Controllers
 {
     [ApiController]
     [Route("[controller]")]

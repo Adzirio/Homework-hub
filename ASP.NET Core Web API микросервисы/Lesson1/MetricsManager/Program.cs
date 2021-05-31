@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Mask1
+namespace MetricsManager
 {
     public class Program
     {
